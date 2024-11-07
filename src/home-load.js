@@ -24,7 +24,20 @@ export function homePageLoad(){
 
         hoursDiv.appendChild(weekday);
     }
-
     contentDiv.appendChild(hoursDiv);
+
+    const locationDiv = document.createElement("div");
+    locationDiv.id = "location-div";
+
+    const locationHeader = document.createElement("h3");
+    locationHeader.textContent = "Location";
+    locationHeader.id = "location-header";
+    locationDiv.appendChild(locationHeader);
+
+    const locationText = document.createElement("p");
+    locationText.textContent = "123 Forest Drive, Forestville, Maine";
+    locationDiv.appendChild(locationText);
+
+    contentDiv.appendChild(locationDiv);
 
 }
