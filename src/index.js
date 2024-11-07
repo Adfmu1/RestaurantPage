@@ -1,7 +1,9 @@
 import "./styles.css";
 
-import { homePageLoad } from "./home-load.js"
 import { clearSiteContent } from "./functions.js";
+
+import { homePageLoad } from "./home-load.js"
+import { menuPageLoad } from "./menu-load.js"
 
 homePageLoad();
 
@@ -13,6 +15,8 @@ document.querySelector("#home").addEventListener("click", () => {
 
 document.querySelector("#menu").addEventListener("click", () => {
     clearSiteContent();
+
+    menuPageLoad();
 });
 
 document.querySelector("#about").addEventListener("click", () => {
