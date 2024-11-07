@@ -4,3 +4,4 @@ export function clearSiteContent() {
         contentDiv.removeChild(contentDiv.lastChild);
     }
 }
+

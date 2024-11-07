@@ -1,12 +1,14 @@
 import "./styles.css";
 
-import { initialPageLoad } from "./initial-load.js"
+import { homePageLoad } from "./home-load.js"
 import { clearSiteContent } from "./functions.js";
 
-initialPageLoad();
+homePageLoad();
 
 document.querySelector("#home").addEventListener("click", () => {
     clearSiteContent();
+
+    homePageLoad();
 });
 
 document.querySelector("#menu").addEventListener("click", () => {
