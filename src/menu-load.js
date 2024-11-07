@@ -6,7 +6,7 @@ export function menuPageLoad(){
     contentDiv.appendChild(mainHeader1);
 
     const pizzasDiv = document.createElement("div");
-    pizzasDiv.id = "hours-div";
+    pizzasDiv.id = "pizzas-div";
 
     const pizzasHeader = document.createElement("h3");
     pizzasHeader.textContent = "Pizzas";
@@ -20,6 +20,8 @@ export function menuPageLoad(){
     for (let i = 0; i < pizzas.length; i++) {
         const pizzaDiv = document.createElement("div")
         pizzaDiv.id = pizzas[i].toLowerCase();
+
+        pizzaDiv.classList.add("pizza");
         
         const pizzaName = document.createElement("h4");
         pizzaName.textContent = pizzas[i];
