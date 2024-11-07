@@ -1,5 +1,32 @@
 /* styles.css */
 body {
-    background-color: rebeccapurple;
+    background-color: mintcream;
   }
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #hours-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .weekday {
+      margin: 1vh;
+    }
+  }
+
+  #location-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    
+    p {
+      margin: 1vh;
+    }
+  }
+}
+
   
