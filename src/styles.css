@@ -34,6 +34,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .pizza {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+
+      * {
+        margin: 0.5vh;
+      }
+    }
   }
 }
 
