@@ -3,9 +3,11 @@ const contentDiv = document.querySelector("#content")
 export function aboutPageLoad() {
     const mainHeader = document.createElement("h1")
     mainHeader.textContent = "Contact us";
+
     contentDiv.appendChild(mainHeader);
 
     const contactDiv = document.createElement("div");
+    contactDiv.id = "contact-div";
 
     const restaurantName = document.createElement("h2");
     restaurantName.textContent = "The Other Good Restaurant";

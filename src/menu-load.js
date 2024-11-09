@@ -1,3 +1,11 @@
+import margherita from './margherita.jpg'
+import capriciosa from './capriciosa.jpg'
+import hampizza from './ham-pizza.jpg'
+
+import water from './water.jpg'
+import cocaCola from './coca-cola.jpg'
+import mojito from './mojito.jpg'
+
 const contentDiv = document.querySelector("#content")
 
 export function menuPageLoad(){
@@ -17,6 +25,8 @@ export function menuPageLoad(){
     const pricesPizzas = [10, 13, 15];
     const descriptionsPizzas = ["Good ol' cheesy pizza", "Margherita but with shrooms and ham", "DOUBLE HAM!"];
 
+    const pizzasPhotos = [margherita, capriciosa, hampizza]
+
     for (let i = 0; i < pizzas.length; i++) {
         const pizzaDiv = document.createElement("div")
         pizzaDiv.id = pizzas[i].toLowerCase();
@@ -29,11 +39,16 @@ export function menuPageLoad(){
         const pizzaPrice = document.createElement("p");
         pizzaPrice.textContent = pricesPizzas[i].toString();
 
+        const pizzaPhoto = document.createElement("img");
+        pizzaPhoto.src = pizzasPhotos[i];
+        pizzaPhoto.classList.add("pizza-photo");
+
         const pizzaDescription = document.createElement("p");
         pizzaDescription.textContent = descriptionsPizzas[i];
 
         pizzaDiv.appendChild(pizzaName);
         pizzaDiv.appendChild(pizzaPrice);
+        pizzaDiv.appendChild(pizzaPhoto);
         pizzaDiv.appendChild(pizzaDescription);
 
         pizzasDiv.appendChild(pizzaDiv);
@@ -52,6 +67,7 @@ export function menuPageLoad(){
     const beverages = ["Water", "Coca-cola", "Mojito"];
     const pricesBeverages = [2, 5, 7];
     const descriptionsBeverages = ["Plain water", "Good old coke", "Refreshing lime, lemon and mint mixed together"];
+    const beveragesPhotos = [water, cocaCola, mojito];
 
     for (let i = 0; i < beverages.length; i++) {
         const beverageDiv = document.createElement("div")
@@ -65,11 +81,16 @@ export function menuPageLoad(){
         const beveragePrice = document.createElement("p");
         beveragePrice.textContent = pricesBeverages[i].toString();
 
+        const beveragePhoto = document.createElement("img");
+        beveragePhoto.src = beveragesPhotos[i];
+        beveragePhoto.classList.add("beverage-photo");
+
         const beverageDescription = document.createElement("p");
         beverageDescription.textContent = descriptionsBeverages[i];
 
         beverageDiv.appendChild(beverageName);
         beverageDiv.appendChild(beveragePrice);
+        beverageDiv.appendChild(beveragePhoto)
         beverageDiv.appendChild(beverageDescription);
 
         beveragesMenu.appendChild(beverageDiv);

@@ -70,6 +70,21 @@ body {
       }
     }
   }
+
+  #contact-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0.5vh 5vh 0.5vh 5vh;
+
+    }
+  }
 }
 
 #pizzas-div, #beverages-div {
