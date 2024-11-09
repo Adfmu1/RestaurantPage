@@ -1,6 +1,9 @@
 /* styles.css */
 body {
-    background-color: mintcream;
+  background-color: mintcream;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
 
 #content {
@@ -48,6 +51,27 @@ body {
       }
     }
   }
+
+  #beverages-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .beverage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+
+      * {
+        margin: 0.5vh;
+      }
+    }
+  }
 }
 
-  
+#pizzas-div, #beverages-div {
+  width: 20vw;
+}
