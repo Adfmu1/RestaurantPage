@@ -43,7 +43,7 @@ body {
       flex-direction: column;
       align-items: center;
 
-      margin-top: 5vh;
+      margin-top: 0;
       margin-bottom: 5vh;
 
       * {
@@ -62,7 +62,7 @@ body {
       flex-direction: column;
       align-items: center;
 
-      margin-top: 5vh;
+      margin-top: 0;
       margin-bottom: 5vh;
 
       * {
@@ -88,5 +88,13 @@ body {
 }
 
 #pizzas-div, #beverages-div {
+  width: 20vw;
+}
+
+.pizza-photo {
+  width: 30vw;
+}
+
+.beverage-photo {
   width: 20vw;
 }

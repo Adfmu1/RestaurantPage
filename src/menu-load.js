@@ -37,7 +37,7 @@ export function menuPageLoad(){
         pizzaName.textContent = pizzas[i];
 
         const pizzaPrice = document.createElement("p");
-        pizzaPrice.textContent = pricesPizzas[i].toString();
+        pizzaPrice.textContent = pricesPizzas[i].toString() + " $";
 
         const pizzaPhoto = document.createElement("img");
         pizzaPhoto.src = pizzasPhotos[i];
@@ -79,7 +79,7 @@ export function menuPageLoad(){
         beverageName.textContent = beverages[i];
 
         const beveragePrice = document.createElement("p");
-        beveragePrice.textContent = pricesBeverages[i].toString();
+        beveragePrice.textContent = pricesBeverages[i].toString() + " $";
 
         const beveragePhoto = document.createElement("img");
         beveragePhoto.src = beveragesPhotos[i];
