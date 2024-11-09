@@ -4,6 +4,7 @@ import { clearSiteContent } from "./functions.js";
 
 import { homePageLoad } from "./home-load.js"
 import { menuPageLoad } from "./menu-load.js"
+import { aboutPageLoad } from "./about-load.js"
 
 homePageLoad();
 
@@ -21,4 +22,6 @@ document.querySelector("#menu").addEventListener("click", () => {
 
 document.querySelector("#about").addEventListener("click", () => {
     clearSiteContent();
+
+    aboutPageLoad();
 });

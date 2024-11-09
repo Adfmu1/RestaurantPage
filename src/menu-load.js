@@ -1,9 +1,9 @@
 const contentDiv = document.querySelector("#content")
 
 export function menuPageLoad(){
-    const mainHeader1 = document.createElement("h1")
-    mainHeader1.textContent = "Menu";
-    contentDiv.appendChild(mainHeader1);
+    const mainHeader = document.createElement("h1")
+    mainHeader.textContent = "Menu";
+    contentDiv.appendChild(mainHeader);
 
     const pizzasDiv = document.createElement("div");
     pizzasDiv.id = "pizzas-div";
